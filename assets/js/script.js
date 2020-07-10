@@ -4,6 +4,12 @@
 var days = $(".weather__days-nav").children()
 var weatherContent = $(".weather__content")
 
+// burger menu
+
+var menuIcon = $(".nav__mobile-icon")
+var mobileMenu = $(".nav__contianer")
+var menueState = false;
+
 
 
 days.each(function (i) {
@@ -31,4 +37,15 @@ $('.owl-carousel').owlCarousel({
 
 
 
+//  burger menu function
 
+
+menuIcon.click(function () {
+    if (!menueState) {
+        mobileMenu.css("height", "46rem")
+        menueState = true;
+    } else {
+        mobileMenu.css("height", "0")
+        menueState = false;
+    }
+})

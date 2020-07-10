@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Droid Arabic Kufi';
-    src: url('DroidArabicKufi-Bold.woff2') format('woff2'),
-        url('DroidArabicKufi-Bold.woff') format('woff');
+    src: url('/assets/fonts/DroidArabicKufi-Bold.woff2') format('woff2'),
+        url('/assets/fonts/DroidArabicKufi-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Droid Arabic Kufi';
-    src: url('DroidArabicKufi.woff2') format('woff2'),
-        url('DroidArabicKufi.woff') format('woff');
+    src: url('/assets/fonts/DroidArabicKufi.woff2') format('woff2'),
+        url('/assets/fonts/DroidArabicKufi.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'FF Yaseer';
-    src: url('FFYaseer-Regular.woff2') format('woff2'),
-        url('FFYaseer-Regular.woff') format('woff');
+    src: url('/assets/fonts/FFYaseer-Regular.woff2') format('woff2'),
+        url('/assets/fonts/FFYaseer-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

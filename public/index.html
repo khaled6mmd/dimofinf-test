@@ -5,9 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Open+Sans&display=swap"
     rel="stylesheet">
 </head>
@@ -92,7 +94,7 @@
     <h1 class="header__main-text">مصمم مبدع ؟ طموح ؟ لا يرضيك سوى الأفضل</h1>
     <span class="header__sub-text">انضم لفريق العمل معنا</span>
     <div class="header__input-container">
-      <input type="text" class="header__input">
+      <input type="text" class="header__input" placeholder="مصمم ويب, مبرمج, إدارة سيرفرات">
 
       <div class="header__search-options">
         <div class="header__prof-wrapper">
@@ -214,31 +216,69 @@
 
       <div class="gallery">
 
-        <div class="gallery__container">
-          <img src="assets/imgs/gallery/Layer 1.png" alt="palace photo" class="gallery__item">
-          <img src="assets/imgs/gallery/Layer 2.png" alt="palace photo" class="gallery__item">
-          <img src="assets/imgs/gallery/Layer 3.png" alt="palace photo" class="gallery__item">
-          <img src="assets/imgs/gallery/Layer 4.png" alt="palace photo" class="gallery__item">
-          <img src="assets/imgs/gallery/Layer 5.png" alt="palace photo" class="gallery__item">
-          <img src="assets/imgs/gallery/Layer 6.png" alt="palace photo" class="gallery__item">
+        <div class="owl-carousel owl-theme">
+
+          <div class="gallery__collection">
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 1.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 6.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 5.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 4.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 2.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 3.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+          </div>
+          <div class="gallery__collection">
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 1.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 2.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 3.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 4.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 5.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 6.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+          </div>
+          <div class="gallery__collection">
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 6.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 5.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 1.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 2.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 3.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+            <div class="gallery__item-container"> <img src="assets/imgs/gallery/Layer 4.png" alt="palace photo"
+                class="gallery__item">
+            </div>
+          </div>
         </div>
-
-        <div class="gallery__nav-container">
-          <div class="gallery__arrow-container"> <i class="fas fa-angle-right gallery__arrow-right"></i>
-          </div>
-
-          <div class="gallery__bullets-container">
-            <div class="gallery__bullet"></div>
-            <div class="gallery__bullet"></div>
-            <div class="gallery__bullet"></div>
-          </div>
-          <div class="gallery__arrow-container"> <i class="fas fa-angle-left gallery__arrow-left"></i>
-          </div>
-
-
-        </div>
-
-
       </div>
 
 
@@ -258,14 +298,25 @@
           <div class="weather__days">
 
             <div class="weather__days-nav">
-              <div class="weather__day">اليوم</div>
+              <div class="weather__day" style="border-bottom: 3px solid #5bc0ec;">اليوم</div>
               <div class="weather__day">الأثنين</div>
               <div class="weather__day">الثلاثاء</div>
             </div>
-            <div class="weather__content">
-              <img src="assets/imgs/CS copy.png" alt="sunny cloud image" class="weather__content-thumb">
-              <div class="weather__content-digit">23°</div>
+            <div class="weather__content-container">
+              <div class="weather__content" style="display: flex;">
+                <img src="assets/imgs/CS copy.png" alt="sunny cloud image" class="weather__content-thumb">
+                <div class="weather__content-digit">23°</div>
+              </div>
+              <div class="weather__content">
+                <img src="assets/imgs/CS copy.png" alt="sunny cloud image" class="weather__content-thumb">
+                <div class="weather__content-digit">30°</div>
+              </div>
+              <div class="weather__content">
+                <img src="assets/imgs/CS copy.png" alt="sunny cloud image" class="weather__content-thumb">
+                <div class="weather__content-digit">40°</div>
+              </div>
             </div>
+
 
             <div class="weather__days-thumbs">
               <div class="weather__thumb">
@@ -359,7 +410,9 @@
 
   </footer>
 </body>
-<script src="assets/js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/732dd3f01b.js" crossorigin="anonymous"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
 
 </html>
