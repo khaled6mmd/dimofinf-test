@@ -3,7 +3,6 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
     outline: none;
 
 }
@@ -14,7 +13,7 @@ html {
     /* 1rem = 10px; 10px/16px = 62.5%  */
     font-size: 62.5%;
     font-family: "Droid Arabic Kufi", sans-serif;
-    ;
+    box-sizing: border-box;
     position: relative;
 }
 
@@ -119,6 +118,8 @@ p {
     align-items: center;
     justify-content: center;
     padding: 0 1.5rem;
+    height: 8rem;
+    border-top: 4px solid #333366;
 }
 
 /* .nav__contianer-li:not(:first-child) {
@@ -135,6 +136,7 @@ p {
     font-size: 1.3rem;
     color: #fff;
     font-weight: bold;
+    margin-top: -4px;
 }
 
 
@@ -333,8 +335,9 @@ p {
 
 /* side panel */
 
-.first-section__side-panel {}
+/* .first-section__side-panel {}
 
+*/
 
 /* hotel */
 
@@ -406,6 +409,8 @@ p {
 
 .first-section__event-arrow {
     position: absolute;
+    top: 3rem;
+    left: 3rem;
 }
 
 .first-section__event-wrapper {
@@ -456,4 +461,327 @@ p {
 .first-section__event-title {
     color: #fff;
     font-size: 1.3rem;
+}
+
+
+/* sec section */
+.sec-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+
+/* gallery */
+
+.gallery {
+    width: 74rem;
+    height: 40rem;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.gallery__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.gallery__item {
+    padding: 1.5rem;
+}
+
+.gallery__nav-container {
+    background-color: #ededed;
+    width: 100%;
+    height: 8.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.gallery__arrow-container {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #cbcbcb;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0 2rem;
+}
+
+.gallery__arrow-right {
+    color: #cbcbcb;
+    font-size: 2.5rem;
+    padding-left: 0.25rem;
+}
+
+.gallery__arrow-left {
+    color: #cbcbcb;
+    font-size: 2.5rem;
+    padding-right: 0.25rem;
+
+}
+
+.gallery__bullets-container {
+    width: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery__bullet {
+    height: 1rem;
+    width: 1rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+
+
+/* side panel */
+
+/* .sec-section__side-panel {} */
+
+
+/* weather */
+
+
+.weather {
+    width: 35rem;
+    height: 40rem;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.weather__title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1f4b68;
+    padding: 1.5rem 2.2rem;
+
+}
+
+.weather__location {
+    width: 100%;
+    position: relative;
+    color: #01b9ff;
+    padding-right: 2.2rem;
+    padding-bottom: 1.5rem;
+}
+
+.weather__location-add {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+.weather__days-nav {
+    display: flex;
+
+}
+
+.weather__day {
+    font-size: 1.2rem;
+    width: 6.5rem;
+    height: 3.1rem;
+    padding-bottom: 1rem;
+    color: #95acbc;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+
+}
+
+.weather__day:hover {
+    border-bottom: 3px solid #5bc0ec;
+    color: #5bc0ec;
+}
+
+.weather__content {
+    width: 100%;
+    height: 18rem;
+    background-image: url(/assets/imgs/Img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(106, 120, 47, 0.473);
+    border-bottom: 5px solid #bfbfbf;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.weather__content-thumb {
+    margin-top: -1.5rem;
+    padding-right: 3.5rem;
+
+
+}
+
+.weather__content-digit {
+    font-size: 9rem;
+    font-weight: bold;
+    font-family: 'Economica', sans-serif;
+    line-height: 7rem;
+    color: #fff;
+    padding-left: 3.5rem;
+}
+
+.weather__days-thumbs {
+    height: 8rem;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.weather__thumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.weather__thumb-icon {
+    padding-bottom: 0.5rem;
+}
+
+.weather__thumb-day {
+    font-family: Verdana, sans-serif;
+    font-size: 1.8rem;
+    color: #77839b;
+}
+
+
+
+/* tables */
+.tabels-section {
+    margin-top: 3rem;
+}
+
+
+td,
+th {
+    height: 6.3rem;
+    color: #a4a9ae;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.42rem;
+
+}
+
+td:not(:nth-last-of-type(-n+3)) {
+    color: #77839b;
+    font-family: "Droid Arabic Kufi", sans-serif;
+    font-size: 1.3rem;
+
+}
+
+.table {
+    border-collapse: collapse;
+    display: table;
+    vertical-align: middle;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.table__check-box {
+    background-color: red;
+    position: relative;
+    height: 1.75rem;
+    width: 1.75rem;
+    margin-right: 2.3rem;
+    margin-top: 1rem;
+}
+
+.table__check-box--inactive {
+    background-color: #a4a9ae;
+}
+
+.table__check-box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+.table__item-row:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table__item-row:hover:not(:first-child) {
+    background-color: #ededed;
+}
+
+.table__item-row-head {
+    color: #a4a9ae;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Droid Arabic Kufi", sans-serif;
+}
+
+/* footer*/
+
+.footer {
+    background-color: #1f4b68;
+    height: 8rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__copyrights {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.footer__scroll-up {
+    position: absolute;
+    left: 14.5%;
+    background-color: rgb(28, 68, 94);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #265d80;
+    cursor: pointer;
 }
