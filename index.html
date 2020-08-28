@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/owl.theme.default.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/mediaqueries.css">
   <link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Open+Sans&display=swap"
     rel="stylesheet">
 </head>
@@ -191,7 +192,22 @@
         </div>
 
         <div class="first-section__event">
-          <img src="assets/imgs/Arrow down.png" alt="arrow down icon" class="first-section__event-arrow">
+          <img src="assets/imgs/Arrow down white.png" alt="arrow down icon"
+            class="first-section__event-arrow first-section__event-arrow--white">
+          <img src="assets/imgs/Arrow down white.png" alt="arrow down icon"
+            class="first-section__event-arrow first-section__event-arrow--up">
+          <ul class="first-section__event-slide">
+
+
+            <li class="first-section__event-slide-li">
+              <a class="first-section__event-slide-link" href="#">مشاهدة الحدث</a>
+            </li>
+            <li class="first-section__event-slide-li"><a class="first-section__event-slide-link" href="#">عن
+                المنظمين</a></li>
+            <li class="first-section__event-slide-li"><a class="first-section__event-slide-link" href="#">المشاركين
+                الان</a></li>
+
+          </ul>
 
           <div class="first-section__event-wrapper">
             <div class="first-section__event-date">
@@ -355,7 +371,11 @@
 
       <table class="table">
         <tr class="table__item-row ">
-          <th> <input class="table__check-box" type="checkbox">
+          <th>
+            <div class="input-wrapper">
+              <input id="active-checkbox-1" class="table__check-box" type="checkbox" />
+              <label for="active-checkbox-1"></label>
+            </div>
           </th>
           <th class="table__item-row-head">الحالة</th>
           <th class="table__item-row-head">الاسم</th>
@@ -365,15 +385,25 @@
 
         </tr>
         <tr class="table__item-row">
-          <td><input class="table__check-box" type="checkbox"></td>
-          <td>موقوف</td>
+          <th>
+            <div class="input-wrapper">
+              <input id="active-checkbox" class="table__check-box" type="checkbox" />
+              <label for="active-checkbox"></label>
+            </div>
+          </th>
+          <td class="table__disabled">موقوف</td>
           <td>محمد امين</td>
           <td>Username@website.com</td>
           <td>Sep 18, 2013</td>
           <td>Sep 15, 2013</td>
         </tr>
         <tr class="table__item-row">
-          <td><input class="table__check-box table__check-box--inactive" type="checkbox"></td>
+          <th>
+            <div class="input-wrapper">
+              <input id="active-checkbox-2" checked class="table__check-box" type="checkbox" />
+              <label for="active-checkbox-2"></label>
+            </div>
+          </th>
           <td>ينتظر التفعيل</td>
           <td>محمود أحمد عبد المجيد قناوي</td>
           <td>Username@website.com</td>
@@ -381,7 +411,12 @@
           <td>Sep 15, 2013</td>
         </tr>
         <tr class="table__item-row">
-          <td><input class="table__check-box" type="checkbox"></td>
+          <th>
+            <div class="input-wrapper">
+              <input id="active-checkbox-3" class="table__check-box" type="checkbox" />
+              <label for="active-checkbox-3"></label>
+            </div>
+          </th>
           <td>نشط</td>
           <td>معاذ الصباحي أحمد ماجد</td>
           <td>Username@website.com</td>
@@ -389,15 +424,25 @@
           <td>Sep 15, 2013</td>
         </tr>
         <tr class="table__item-row">
-          <td><input class="table__check-box table__check-box--inactive" type="checkbox"></td>
-          <td>موقوف</td>
+          <th>
+            <div class="input-wrapper">
+              <input id="active-checkbox-4" checked class="table__check-box" type="checkbox" />
+              <label for="active-checkbox-4"></label>
+            </div>
+          </th>
+          <td class="table__disabled">موقوف</td>
           <td>عبد الله فهد العزيمي</td>
           <td>Username@website.com</td>
           <td>Sep 18, 2013</td>
           <td>Sep 15, 2013</td>
         </tr>
         <tr class="table__item-row">
-          <td><input class="table__check-box table__check-box--inactive" type="checkbox"></td>
+          <th>
+            <div class="input-wrapper">
+              <input id="active-checkbox-5" checked class="table__check-box" type="checkbox" />
+              <label for="active-checkbox-5"></label>
+            </div>
+          </th>
           <td>نشط</td>
           <td>راشد إبراهيم سمير الشرقاوي</td>
           <td>Username@website.com</td>
