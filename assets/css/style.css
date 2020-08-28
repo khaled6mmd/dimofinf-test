@@ -157,7 +157,7 @@ p {
 .header {
     height: 102.4rem;
     position: relative;
-    background-image: url(/assets/imgs/header/image.png);
+    background-image: url(assets/imgs/header/image.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
